@@ -1,3 +1,6 @@
+// © 2022 Vlad-Stefan Harbuz <vlad@vladh.net>
+// SPDX-License-Identifier: GPL-3.0-only
+
 const DATA_FETCH_INTERVAL = 5000;
 const API_ROOT = 'https://radio.vladh.net/api/'
 
