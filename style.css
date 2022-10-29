@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    font-weight: 200;
+    src: url(/fonts/din/DINNextLTPro-Light.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'DIN Next LT Pro';
+    font-weight: 400;
+    src: url(/fonts/din/DINNextLTPro-Regular.woff) format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Independent';
+    font-weight: 400;
+    src: url(/fonts/independent/independent-regular.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Independent';
+    font-weight: bold;
+    src: url(/fonts/independent/independent-bold.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Independent';
+    font-style: italic;
+    src: url(/fonts/independent/independent-italic.woff) format('woff');
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Independent', Georgia, serif;
+    line-height: 1.4;
+    background: #0055ee;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dashed white;
+}
+
+a:hover {
+    border-bottom-style: solid;
+}
+
+a.suplink {
+    border: none;
+}
+
+a.suplink sup {
+    padding: 2px 0;
+}
+
+a:hover.suplink sup {
+    background: white;
+    color: #0055ee;
+}
+
+pre {
+    margin: 0;
+}
+
+.container {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    max-width: 800px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        margin: 1rem auto;
+        padding: 0 1rem;
+    }
+}
+
+h1 {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid white;
+    font-family: 'DIN Next LT Pro', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 4rem;
+}
+
+.blurb {
+    margin-bottom: 2rem;
+}
+
+.error {
+    display: none;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background: rgba(255, 0, 0, 0.5);
+}
+
+.error__message {
+    margin-top: 1rem;
+}
+
+.notice {
+    display: none;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.station {
+    margin-bottom: 2rem;
+}
+
+.station .station__heading {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.station .live {
+    flex: 1;
+    text-align: right;
+    text-transform: uppercase;
+    font-family: 'DIN Next LT Pro', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.station .live::before {
+    display: inline-block;
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 0.5rem;
+    border-radius: 100%;
+    background: red;
+}
+
+.station h2 {
+    flex: 1;
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-family: 'DIN Next LT Pro', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.station audio {
+    width: 100%;
+}
+
+.song {
+    display: flex;
+    background: #152645;
+    font-family: 'DIN Next LT Pro', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.song .song__parts {
+    display: flex;
+}
+
+.song .song__art {
+    flex: 0 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 100%;
+    background: white;
+}
+
+.song .song__art .song__disc {
+    flex: 0 0 4rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background: #0055ee;
+}
+
+.song .song__meta {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    min-height: 6rem;
+}
+
+.song .song__title {
+    font-weight: bold;
+}

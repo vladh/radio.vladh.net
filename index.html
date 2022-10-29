@@ -3,50 +3,201 @@
     <head>
         <title>vladh radio</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
         <link rel="apple-touch-icon" sizes="180x180" href="https://vladh.net/assets/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="https://vladh.net/assets/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="https://vladh.net/assets/favicon-16x16.png">
-<style>
-</style>
+        <link rel="stylesheet" href="/style.css">
     </head>
     <body>
         <div class="container">
             <h1>vladh radio</h1>
 
-            <h2>Classical Post 1945</h2>
-            <audio controls="" preload="none">
-                <source src="https://radio.vladh.net/listen/classical-post-1945/stream192.mp3" type="audio/mpeg">
-            </audio>
+            <p class="blurb">
+                Good jams served daily from London, England, live 24/7.
+                Software is freely available
+                <a class="suplink" href="https://git.gammaspectra.live/S.O.N.G/MeteorLight"><sup>[1]</sup></a>
+                <a class="suplink" href="https://git.sr.ht/~vladh/radio-api"><sup>[2]</sup></a>
+                <a class="suplink" href="https://git.sr.ht/~vladh/radio.vladh.net"><sup>[3]</sup></a>.
+                For questions and other things, visit <a href="https://vladh.net">vladh.net</a>.
+            </p>
 
-            <h2>Classical Pre 1945</h2>
-            <audio controls="" preload="none">
-                <source src="https://radio.vladh.net/listen/classical-pre-1945/stream192.mp3" type="audio/mpeg">
-            </audio>
+            <div class="error">
+                There was an error. Please <a href="https://vladh.net">contact Vlad</a> to let him know. The error was:
+                <pre class="error__message"></pre>
+            </div>
 
-            <h2>Hyperpop</h2>
-            <audio controls="" preload="none">
-                <source src="https://radio.vladh.net/listen/hyperpop/stream192.mp3" type="audio/mpeg">
-            </audio>
+            <div class="notice"></div>
 
-            <h2>Japanese and Korean</h2>
-            <audio controls="" preload="none">
-                <source src="https://radio.vladh.net/listen/japanese-and-korean/stream192.mp3" type="audio/mpeg">
-            </audio>
+            <div class="station" data-id="pop">
+                <div class="station__heading">
+                    <h2>Pop</h2>
+                    <div class="live">live</div>
+                </div>
+                <div class="station__body">
+                    <div class="song">
+                        <div class="song__parts">
+                            <div class="song__art">
+                                <div class="song__disc"></div>
+                            </div>
+                            <div class="song__meta">
+                                <div class="song__title">(song info loading)</div>
+                                <div class="song__artist"></div>
+                                <div class="song__album"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <audio controls="" preload="none">
+                        <source src="https://radio.vladh.net/listen/pop/stream192.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
 
-            <h2>Jazz</h2>
-            <audio controls="" preload="none">
-                <source src="https://radio.vladh.net/listen/jazz/stream192.mp3" type="audio/mpeg">
-            </audio>
+            <div class="station" data-id="japanese-and-korean">
+                <div class="station__heading">
+                    <h2>Japanese and Korean</h2>
+                    <div class="live">live</div>
+                </div>
+                <div class="station__body">
+                    <div class="song">
+                        <div class="song__parts">
+                            <div class="song__art">
+                                <div class="song__disc"></div>
+                            </div>
+                            <div class="song__meta">
+                                <div class="song__title">(song info loading)</div>
+                                <div class="song__artist"></div>
+                                <div class="song__album"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <audio controls="" preload="none">
+                        <source src="https://radio.vladh.net/listen/japanese-and-korean/stream192.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
 
-            <h2>Pop</h2>
-            <audio controls="" preload="none">
-                <source src="https://radio.vladh.net/listen/pop/stream192.mp3" type="audio/mpeg">
-            </audio>
+            <div class="station" data-id="classical-post-1945">
+                <div class="station__heading">
+                    <h2>Classical Post 1945</h2>
+                    <div class="live">live</div>
+                </div>
+                <div class="station__body">
+                    <div class="song">
+                        <div class="song__parts">
+                            <div class="song__art">
+                                <div class="song__disc"></div>
+                            </div>
+                            <div class="song__meta">
+                                <div class="song__title">(song info loading)</div>
+                                <div class="song__artist"></div>
+                                <div class="song__album"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <audio controls="" preload="none">
+                        <source src="https://radio.vladh.net/listen/classical-post-1945/stream192.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
 
-            <h2>Quiet Indie</h2>
-            <audio controls="" preload="none">
-                <source src="https://radio.vladh.net/listen/quiet-indie/stream192.mp3" type="audio/mpeg">
-            </audio>
+            <div class="station" data-id="classical-pre-1945">
+                <div class="station__heading">
+                    <h2>Classical Pre 1945</h2>
+                    <div class="live">live</div>
+                </div>
+                <div class="station__body">
+                    <div class="song">
+                        <div class="song__parts">
+                            <div class="song__art">
+                                <div class="song__disc"></div>
+                            </div>
+                            <div class="song__meta">
+                                <div class="song__title">(song info loading)</div>
+                                <div class="song__artist"></div>
+                                <div class="song__album"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <audio controls="" preload="none">
+                        <source src="https://radio.vladh.net/listen/classical-pre-1945/stream192.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+
+            <div class="station" data-id="hyperpop">
+                <div class="station__heading">
+                    <h2>Hyperpop</h2>
+                    <div class="live">live</div>
+                </div>
+                <div class="station__body">
+                    <div class="song">
+                        <div class="song__parts">
+                            <div class="song__art">
+                                <div class="song__disc"></div>
+                            </div>
+                            <div class="song__meta">
+                                <div class="song__title">(song info loading)</div>
+                                <div class="song__artist"></div>
+                                <div class="song__album"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <audio controls="" preload="none">
+                        <source src="https://radio.vladh.net/listen/hyperpop/stream192.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+
+            <div class="station" data-id="jazz">
+                <div class="station__heading">
+                    <h2>Jazz</h2>
+                    <div class="live">live</div>
+                </div>
+                <div class="station__body">
+                    <div class="song">
+                        <div class="song__parts">
+                            <div class="song__art">
+                                <div class="song__disc"></div>
+                            </div>
+                            <div class="song__meta">
+                                <div class="song__title">(song info loading)</div>
+                                <div class="song__artist"></div>
+                                <div class="song__album"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <audio controls="" preload="none">
+                        <source src="https://radio.vladh.net/listen/jazz/stream192.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+
+            <div class="station" data-id="quiet-indie">
+                <div class="station__heading">
+                    <h2>Quiet Indie</h2>
+                    <div class="live">live</div>
+                </div>
+                <div class="station__body">
+                    <div class="song">
+                        <div class="song__parts">
+                            <div class="song__art">
+                                <div class="song__disc"></div>
+                            </div>
+                            <div class="song__meta">
+                                <div class="song__title">(song info loading)</div>
+                                <div class="song__artist"></div>
+                                <div class="song__album"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <audio controls="" preload="none">
+                        <source src="https://radio.vladh.net/listen/quiet-indie/stream192.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+
         </div>
+        <script src="main.js"></script>
     </body>
 </html>
